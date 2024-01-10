@@ -18,7 +18,7 @@ ip_plus_ckpt = hf_hub_download(repo_id="h94/IP-Adapter-FaceID", filename="ip-ada
 
 safety_model_id = "CompVis/stable-diffusion-safety-checker"
 safety_feature_extractor = AutoFeatureExtractor.from_pretrained(safety_model_id)
-safety_checker = StableDiffusionSafetyChecker.from_pretrained(safety_model_id)
+#safety_checker = StableDiffusionSafetyChecker.from_pretrained(safety_model_id)
 
 if torch.cuda.is_available():
   device = "cuda"
@@ -43,7 +43,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
     scheduler=noise_scheduler,
     vae=vae,
     feature_extractor=safety_feature_extractor,
-    safety_checker=safety_checker
+#    safety_checker=safety_checker
 )
 
 #pipe.load_lora_weights("h94/IP-Adapter-FaceID", weight_name="ip-adapter-faceid-plusv2_sd15_lora.safetensors")
