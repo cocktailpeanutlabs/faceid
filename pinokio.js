@@ -2,6 +2,7 @@ const path = require('path')
 module.exports = {
   version: 1,
   title: "IP-Adapter-FaceID",
+  description: "Enter a face image and transform it to any other image. Demo for the h94/IP-Adapter-FaceID model https://huggingface.co/spaces/multimodalart/Ip-Adapter-FaceID",
   icon: "icon.png",
   menu: async (kernel) => {
     let installing = await kernel.running(__dirname, "install.js")

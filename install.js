@@ -8,9 +8,6 @@ module.exports = {
     "type": "conda",
     "name": "ffmpeg",
     "args": "-c conda-forge"
-  }, {
-    "gpu": "nvidia",
-    "name": "cuda"
   }],
   "run": [{
     "method": "shell.run",
