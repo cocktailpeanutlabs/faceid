@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: 1,
+  version: "3.0",
   title: "IP-Adapter-FaceID",
   description: "Enter a face image and transform it to any other image. Demo for the h94/IP-Adapter-FaceID model https://huggingface.co/spaces/multimodalart/Ip-Adapter-FaceID",
   icon: "icon.png",
